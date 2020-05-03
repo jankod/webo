@@ -22,10 +22,6 @@ public abstract class Page {
         this.widgets.add(widget);
     }
 
-    public String html() {
-        String html = widgets.stream().map(w -> w.html() + "\n").collect(Collectors.joining());
-        return html;
-    }
     public abstract void render(HttpServletRequest req, HttpServletResponse resp);
 
 //    public String render(Request req, Response res) {

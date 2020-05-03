@@ -53,16 +53,9 @@ public class Webo {
 
     }
 
-
-//    private Map<Class<?extends Page>,Page> pagesInstantiates = new HashMap<>();
-
     @SneakyThrows
     private Page instantiatePage(Class<? extends Page> pageClass) {
-//        if(pagesInstantiates.containsKey(pageClass)) {
-//            return  pagesInstantiates.get(pageClass);
-//        }
         Page page = pageClass.getConstructor().newInstance();
-//        pagesInstantiates.put(pageClass, page);
         return page;
     }
 

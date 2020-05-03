@@ -2,6 +2,7 @@ package hr.ja.webo.widget;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.ToString;
 
 @Data
 @AllArgsConstructor
@@ -10,9 +11,9 @@ public class Label extends Widget {
     private String text;
 
 
-    @Override
-    public String html()
-    {
-        return "nije pero " + text;
+    public String toString() {
+        return text;
     }
+
+
 }

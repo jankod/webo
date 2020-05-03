@@ -1,7 +1,7 @@
 package hr.ja.webo.util;
 
 import freemarker.template.Configuration;
-import hr.ja.webo.Page;
+import hr.ja.webo.demo.Page1;
 import hr.ja.webo.widget.Card;
 import lombok.extern.slf4j.Slf4j;
 import spark.ModelAndView;
@@ -48,5 +48,10 @@ public class WeboUtil {
         String templatePath = clazz.getPackageName();
         templatePath = "/" + templatePath.replace(".", "/") + "/" + path;
         return templatePath;
+    }
+
+
+    public static PageUrl url(Class<Page1> page1Class) {
+        return null;
     }
 }

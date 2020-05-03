@@ -1,6 +1,8 @@
 package hr.ja.webo.widget;
 
-public abstract class Widget {
+import java.util.function.Function;
 
-    public abstract String html() ;
+public abstract class  Widget {
+    public void onClick(Function<Event,EventResult> function) {
+    }
 }
