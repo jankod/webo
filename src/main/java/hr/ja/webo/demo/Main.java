@@ -19,18 +19,11 @@ public class Main {
         AdminLte admin = new AdminLte();
         admin.getNavbar().addLink("page1", WeboUtil.url(Page1.class));
 
-//        admin.getNavbar()
-//                .addPage(Page1.class);
-
         admin.setTitle("Webooo");
         Webo web = new Webo();
         web.add(Page1.class);
 
         web.start();
-
-        //  URL resource1 = Main.class.getResource("pero.ftl");
-
-        //log.debug("res {}", resource1);
 
     }
 }

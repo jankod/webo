@@ -34,6 +34,11 @@ public class Webo {
 //        engine = new FreeMarkerEngine(configuration);
     }
 
+    public void startSpa() {
+
+    }
+
+
     public void start() {
         Spark.staticFiles.location("/public");
         for (Class<? extends Page> pageClass : pages) {

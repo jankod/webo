@@ -4,7 +4,7 @@ import lombok.Data;
 
 //@FieldNameConstants
 @Data
-public class TextBox {
+public class TextBox implements FormField {
 
     private String label;
 
